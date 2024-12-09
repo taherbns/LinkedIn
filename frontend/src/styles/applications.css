@@ -1,0 +1,170 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajout pour éviter les erreurs de taille */
+  }
+ 
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    height: 60px;
+  }
+ 
+  .nav-left, .nav-right {
+    flex: 0 0 auto;
+  }
+ 
+  .nav-center {
+    flex: 1;
+    text-align: center;
+  }
+ 
+  .back-button {
+    background-color: #004aad;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 8px;
+  }
+ 
+  .navbar-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+ 
+  /* Conteneur de contenu */
+  .job-content-container h2 {
+    margin-top: 30px;
+    color: #004aad !important;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+  }
+ 
+  /* Bloc principal pour les jobs */
+  .job-block {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    max-width: 800px;
+    margin: 10px auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .job-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .job-block h3 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+ 
+  .job-block p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+ 
+  /* Statistiques et candidatures */
+  .candidate-details {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+  }
+ 
+  .candidate-details .candidate-block {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .candidate-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+ 
+  .candidate-details a:hover {
+    text-decoration: underline;
+  }
+ 
+  /* Messages */
+  .error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+ 
+  .empty-message {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
+ 
+  /* Bouton pour calculer les similarités */
+  .calculate-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+ 
+  .calculate-button:hover {
+    background-color: #0056b3;
+  }
+ 
+  /* Résultats */
+  .similarity-results {
+    margin-top: 15px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+ 
+  .similarity-results h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+ 
+  /* Réactivité */
+  @media (max-width: 768px) {
+    .job-stats-container {
+      padding: 15px;
+    }
+ 
+    .job-block {
+      padding: 10px;
+    }
+ 
+    .calculate-button {
+      padding: 8px 12px;
+    }
+  }
+ 

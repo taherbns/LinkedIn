@@ -1,0 +1,28 @@
+.buttonMatch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px 0;
+    padding-right: 10px;
+    color: white;
+  }
+  
+  .buttonMatch button {
+    background-color: #007bff; /* Couleur bleu professionnel */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 15px; /* Espacement interne */
+    font-size: 14px; /* Taille de la police */
+    cursor: pointer; /* Curseur interactif */
+    transition: background-color 0.3s ease; /* Transition fluide pour hover */
+  }
+  
+  .buttonMatch button:hover {
+    background-color: #0056b3; /* Couleur plus sombre au survol */
+  }
+  
+  .buttonMatch button:active {
+    background-color: #003f7f; /* Couleur encore plus sombre lors du clic */
+  }
+  
